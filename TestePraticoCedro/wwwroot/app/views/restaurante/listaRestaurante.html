@@ -1,0 +1,70 @@
+﻿<div class="wrapper wrapper-content" ng-controller="restauranteController as vm">
+    <div class="row ibox">
+        <div class="ibox-title">
+            <h2>{{vm.titulo}}</h2>
+        </div>
+        <div class="ibox-content">
+            <form class="form-horizontal" name="formRestaurante">
+                <div class="form-group">
+                    <label class="col-lg-1 control-label">Restaurante</label>
+                    <div class="col-lg-9">
+                        <input type="text" placeholder="Informe o nome do restaurante para pesquisa" ng-model="vm.filtro.nomeRestaurante" name="filtroPrato" class="form-control" ng-maxlength="50" ng-minlength="3" required>
+                        <div class="m-t-xs" ng-show="formRestaurante.filtroPrato.$invalid && formRestaurante.filtroPrato.$dirty">
+                            <small class="text-danger" ng-show="formRestaurante.filtroPrato.$error.required">Por favor informe um nome para a pesquisa</small>
+                            <small class="text-danger" ng-show="formRestaurante.filtroPrato.$error.maxlength">O nome do prato pode ter no máximo 50 caracteres</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <button class="btn btn-sm btn-primary" ng-click="vm.pesquisar()" ng-disabled="formRestaurante.$invalid" type="submit">Pesquisar</button>
+                    </div>
+                    <div class="col-lg-1">
+                        <button class="btn btn-sm btn-default" ng-click="vm.incluir()" type="submit">Incluir</button>
+                    </div>
+                </div>
+            </form>
+            <div class="hr-line-dashed"></div>
+            <div class="row" ng-if="!vm.dadosCarregados">
+                <center>
+                    <h3>Aguarde, carregando dados...</h3>
+                </center>
+            </div>
+            <div class="row" ng-if="vm.dadosCarregados">
+                <div class="col-sm-12" ng-if="vm.lista.length == 0">
+                    Nenhum item encontrado.
+                </div>
+                <div class="col-sm-12" ng-if="vm.lista.length > 0">
+                    <div class="row">
+                        <span class="pull-right small text-muted" ng-if="vm.dadosCarregados">Exibindo {{vm.lista.length}} resultados</span>
+                    </div>
+                    <div class="row col-sm-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <colgroup>
+                                    <col style="width: 100px">
+                                    <col style="width: 830px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td>Código</td>
+                                        <td>Nome restaurante</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in vm.lista">
+                                        <td>#{{item.idRestaurante}}</td>
+                                        <td>{{item.nomeRestaurante}}</td>
+                                        <td>
+                                            <button class="btn btn-white btn-xs" ng-click="vm.editar(item)" data-toggle="tooltip" data-placement="top" title="" data-original-title="Alterar"><i class="fa fa-pencil"></i> Alterar</button>
+                                            <button class="btn btn-danger btn-xs" ng-click="vm.excluir(item)" data-toggle="tooltip" data-placement="top" title="" data-original-title="Excluir"><i class="fa fa-trash"></i> Excluir</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

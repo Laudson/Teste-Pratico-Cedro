@@ -1,0 +1,11 @@
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\bin\Debug\netcoreapp2.0\TestePraticoCedro.deps.json
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\bin\Debug\netcoreapp2.0\TestePraticoCedro.runtimeconfig.json
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\bin\Debug\netcoreapp2.0\TestePraticoCedro.runtimeconfig.dev.json
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\bin\Debug\netcoreapp2.0\TestePraticoCedro.dll
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\obj\Debug\netcoreapp2.0\TestePraticoCedro.csprojResolveAssemblyReference.cache
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\obj\Debug\netcoreapp2.0\TestePraticoCedro.csproj.CoreCompileInputs.cache
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\obj\Debug\netcoreapp2.0\TestePraticoCedro.AssemblyInfoInputs.cache
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\obj\Debug\netcoreapp2.0\TestePraticoCedro.AssemblyInfo.cs
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\bin\Debug\netcoreapp2.0\TestePraticoCedro.pdb
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\obj\Debug\netcoreapp2.0\TestePraticoCedro.dll
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\TestePraticoCedro\TestePraticoCedro\obj\Debug\netcoreapp2.0\TestePraticoCedro.pdb
